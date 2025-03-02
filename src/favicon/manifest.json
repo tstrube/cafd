@@ -1,0 +1,14 @@
+{
+	"name": "Central Asia Fault Database",
+	"short_name": "CAFD",
+	"icons": [
+		{
+			"src": "favicon-194x194.png",
+			"sizes": "194x194",
+			"type": "image/png"
+		}
+	],
+	"theme_color": "#ffffff",
+	"background_color": "#ffffff",
+	"display": "standalone"
+}

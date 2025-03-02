@@ -1,0 +1,343 @@
+html, body, div, span, p,  a, code, img,
+ol, ul, li, fieldset, form, label, legend,
+table, tbody, tfoot, thead, tr, th, td,
+article, aside, nav, footer, header,
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-font-feature-settings: "liga", "kern";
+	font-size: 1em;
+	font-weight: normal;
+	font-style: normal;
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+p {
+	line-height: 120%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img.fix {
+	width: 100%;
+	height: 100%;
+}
+
+hr {
+	border: medium none;
+	border-top: 1px solid black;
+	height: 1px;
+	margin: 8px 0;
+}
+
+h1 {
+	font-size: 1.4em;
+	line-height: 2.5em;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 1.2em;
+	line-height: 2em;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 1em;
+	line-height: 1.5em;
+	font-weight: bold;
+}
+
+h1.nopad {
+	line-height: 1.4em;
+}
+
+h2.nopad {
+	line-height: 1.2em;
+}
+
+h3.nopad {
+	line-height: 1em;
+}
+
+table {
+	border: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+th {
+	text-align: left;
+	padding: 3px 5px;
+	font-weight: 800;
+}
+
+td {
+	vertical-align: top;
+	padding: 3px 5px;
+	margin: 0;
+}
+
+tr.list:nth-child(even) {
+	background: #eeeeee;
+}
+
+tr.hover:hover {
+	background: cyan;
+	cursor: pointer;
+}
+
+a:link, a:visited, a:hover {
+	color: blue;
+}
+
+textarea {
+	width: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+.line {
+	border-bottom: 3px solid #A51E38;
+}
+
+.space {
+	padding-top: 15px;
+}
+
+.small_space {
+	padding-top: 5px;
+}
+
+.link {
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.link_nodec {
+	color: black;
+	text-decoration: underline;
+	cursor: default;
+}
+
+a.link_nodec:link, a.link_nodec:visited, a.link_nodec:hover {
+	color: black;
+}
+
+.link_noblue {
+	color: black;
+	text-decoration: underline;
+}
+
+a.link_noblue:link, a.link_noblue:visited, a.link_noblue:hover {
+	color: black;
+}
+
+.link_head {
+	color: black;
+	text-decoration: none;
+}
+
+a.link_head:link, a.link_head:visited, a.link_head:hover {
+	color: black;
+}
+
+button.selected {
+	color: blue;
+}
+
+button.map_button {
+	font-weight: bold;
+	margin: 0px;
+}
+
+#wrapper {
+	height: 100%;
+	border: 0px solid black;
+	box-shadow: 0 0 5px #888;
+}
+
+#top_left {
+	float: left;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+#top_middle {
+	float: none;
+	overflow: hidden;
+	text-align: left;
+	padding-top: 10px;
+}
+
+#top_right {
+	float: right;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+#top_left img {
+	width: 260px;
+}
+
+#top_right img {
+	width: 260px;
+}
+
+#image_bar {
+	height: 154px;
+	margin-bottom: -4px;
+}
+
+#image_bar img {
+	height: 150px;
+	width: 20%;
+	object-fit: cover;
+}
+
+#nav_left {
+	float: left;
+	width: 50%;
+}
+
+#nav_right {
+	float: right;
+	width: 50%;
+	text-align: right;
+}
+
+#navigation {
+	margin: 5px 0;
+}
+
+#navigation li {
+	display: inline;
+	padding: 15px 10px;
+	font-weight: 800;
+}
+
+#navigation li.current {
+	color: black;
+	text-decoration: none;
+	cursor: default;
+}
+
+#nav_sub li {
+	display: inline;
+	padding: 0;
+	font-weight: 800;
+	margin-right: 10px;
+}
+
+#nav_sub li.current {
+	color: black;
+	text-decoration: none;
+	cursor: default;
+}
+
+#nav_sub_mobile {
+	display: none;
+}
+
+#map_wrapper {
+	float: left;
+	margin: 0 10px;
+	width: calc(100% - 20px);
+	height: calc(100% - 300px);
+}
+
+#map_size {
+	height: 100%;
+	margin-right: 250px;
+}
+
+#map {
+	height: 100%;
+}
+
+#map_menu {
+	position: relative;
+	width: 240px;
+	margin-left: -240px;
+	float: right;
+	overflow: hidden;
+	font-size: 0.9em;
+}
+
+#search_menu {
+	position: relative;
+	width: 420px;
+	margin-right: -420px;
+	float: left;
+	overflow: hidden;
+}
+
+#search_results {
+	width: 405px;
+	overflow: hidden;
+}
+
+#search_map {
+	margin-left: 420px;
+	height: calc(100% - 300px);
+}
+
+#view_map {
+	float: left;
+	margin: 0 10px;
+	width: calc(100% - 20px);
+	height: 100%;
+}
+
+.map-view-container {
+    display: flex;
+    justify-content: space-between;
+	height: 100%;
+    width: 100%;
+	height: calc(100% - 300px);
+}
+
+.map-container, .view-container {
+	height: 100%;
+    width: 50%;         
+    box-sizing: border-box;
+}
+
+.view-container {
+    padding-left: 10px;
+}
+
+.view_name {
+	float: left;
+	width: 200px;
+	padding: 5px;
+}
+
+.view_content {
+	display: block;
+	overflow: hidden;
+	padding: 5px;
+}
+
+.view_comment {
+	background: #eee;
+}
