@@ -18,7 +18,6 @@ $navigation = array();
 array_push($navigation, array('index.php', 'SHOW MAP'));
 array_push($navigation, array('search.php', 'SEARCH FAULTS'));
 array_push($navigation, array('downloads.php', 'DOWNLOADS'));
-array_push($navigation, array('feedback.php', 'FEEDBACK'));
 array_push($navigation, array('about.php', 'ABOUT'));
 array_push($navigation, array('resources.php', 'RESOURCES'));
 

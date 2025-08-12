@@ -20,10 +20,7 @@ function head($page) {
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js" type="text/javascript"></script>
 	<script src="include/jquery.multiselect.js" type="text/javascript"></script>
 	<script src="include/spin.min.js" type="text/javascript"></script>
-	<script src="https://www.google.com/recaptcha/api.js"></script>
 ';
-
-require_once 'analytics.php';
 
 echo '
 </head>
@@ -40,7 +37,6 @@ function foot() {
 	echo '<center><div style="margin: 10px; font-size: 10px;">Last updated on: ' .
 		date('d.m.Y', strtotime($result['MAX(last_update)'])) .
 		' &middot; <a href="trackinginfo.php" class="link_noblue">Tracking Information</a></div></center></body></html>';
-
 }
 
 function arrayToCommaString($input) {
