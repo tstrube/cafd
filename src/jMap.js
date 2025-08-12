@@ -12,23 +12,24 @@ var view = new ol.View({
 	minResolution: 0,
 	maxResolution: 50000
 });
+
+var hillshadeLayer = new ol.layer.Tile({
+  source: new ol.source.XYZ({
+    url: 'https://server.arcgisonline.com/ArcGIS/rest/services/Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}',
+    attributions: 'Source: Esri, USGS, NOAA',
+    crossOrigin: 'anonymous'
+  }),
+  opacity: 0.5
+});
+
+var baseLayer = new ol.layer.Tile({
+  source: new ol.source.OSM()
+});
+
 var map = new ol.Map({
-	controls: ol.control.defaults({
-		attributionOptions: ({ collapsible: false })
-	}).extend([
-		new ol.control.ScaleLine()
-	]),
-    target: 'map',
-	layers: [
-		new ol.layer.Tile({
-			source: new ol.source.BingMaps({
-			   key: 'Aj6DIWfGOpAqw6zYpiqoOQ4UWwc-wDWOxOi1_HBnBsShQyGLCY49lxDebO6UXZiu',
-        imagerySet: 'Road',
-		   maxZoom: 19
-      })
-		})
-	],
-	view: view
+  target: 'map',
+  layers: [baseLayer, hillshadeLayer],
+  view: view
 });
 
 // Init Spinner
@@ -355,10 +356,9 @@ var quakeInducedLayers 		= [];
 var quaternaryLayers		= [];
 var allslideLayers			= [];
 
-var quake_mag 				= 0 // OLD : $("input[type='radio'][name='quake_mag']").val();
-var quake_depth 			= 0 // OLD : $("input[type='radio'][name='quake_depth']:checked").val();
-
-var slide_area 				= 0 // OLD : $("input[type='radio'][name='slide_area']:checked").val();
+var quake_mag 				= 0;
+var quake_depth 			= 0;
+var slide_area 				= 0;
 
 function selectionChanged() {
 	var enableFaults 		= $("select#layer option:selected").val() == "faults";
